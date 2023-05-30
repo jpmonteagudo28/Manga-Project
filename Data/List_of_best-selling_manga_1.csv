@@ -1,0 +1,183 @@
+ID,Title,Author,Pub,Demo,Vols,Series,Sold,SaleVol,Run,Digi,Tele
+1,One Piece,Eiichiro Oda,3,0,103,25,516.6,5.02,1,0,1
+2,Dragon Ball,Akira Toriyama,3,0,42,11,350,8.33,0,0,1
+3,Golgo 13,"Takao Saito, Saito Production",2,1,205,54,300,1.46,1,0,1
+4,Detective Conan,Gosho Aoyama,2,0,101,28,250,2.5,1,0,1
+5,Doraemon,Fujiko F. Fujio,2,2,51,27,250,4.71,0,0,1
+6,Naruto,Masashi Kishimoto,3,0,72,15,250,3.47,0,0,1
+7,Slam Dunk,Takehiko Inoue,3,0,31,6,170,5.48,0,0,1
+8,KochiKame: Tokyo Beat Cops,Osamu Akimoto,3,0,201,40,156.5,0.78,0,0,1
+9,Demon Slayer: Kimetsu no Yaiba,Koyoharu Gotouge,3,0,23,4,150,6.52,0,1,1
+10,Crayon Shin-chan,"Yoshito Usui, UY Team",0,1,61,32,148,2.55,1,0,0
+11,Oishinbo,"Tetsu Kariya, Akira Hanasaki",2,1,111,31,135,1.22,0,0,0
+12,Bleach,Tite Kubo,3,0,74,15,130,1.75,0,0,1
+13,JoJo's Bizarre Adventure,Hirohiko Araki,3,0,131,35,120,0.92,1,0,1
+14,Attack on Titan,Hajime Isayama,1,0,34,12,110,3.23,0,1,1
+15,Astro Boy,Osamu Tezuka,0,0,23,16,100,4.35,0,0,1
+16,Fist of the North Star,"Buronson, Tetsuo Hara",3,0,27,5,100,3.7,0,0,0
+17,Hajime no Ippo,George Morikawa,1,0,134,33,100,0.74,1,0,0
+18,The Kindaichi Case Files,"Yōzaburō Kanari, Seimaru Amagi, Fumiya Satō",1,0,87,30,100,1.15,1,0,0
+19,Touch,Mitsuru Adachi,2,0,26,5,100,3.85,0,0,0
+20,Kingdom,Yasuhisa Hara,3,1,66,16,92,1.39,1,1,0
+21,Sazae-san,Machiko Hasegawa,1,2,45,28,86,1.91,0,0,0
+22,Baki the Grappler,Keisuke Itagaki,0,0,143,31,85,0.59,1,0,1
+23,Hunter x Hunter,Yoshihiro Togashi,3,0,36,24,84,2.33,1,0,1
+24,Vagabond,Takehiko Inoue,1,1,37,17,82,2.21,0,0,0
+25,Captain Tsubasa,Yōichi Takahashi,3,0,96,41,80,0.83,1,0,0
+26,Fullmetal Alchemist,Hiromu Arakawa,0,0,27,9,80,2.96,0,0,1
+27,Sangokushi,Mitsuteru Yokoyama,0,0,60,15,80,1.33,0,0,0
+28,Kinnikuman,Yudetamago,3,0,76,19,77,1.01,1,0,0
+29,Fairy Tail,Hiro Mashima,1,0,63,11,72,1.14,0,0,0
+30,Rurouni Kenshin,Nobuhiro Watsuki,3,0,28,5,72,2.57,0,1,0
+31,Jujutsu Kaisen,Gege Akutami,3,0,21,4,70,3.33,1,1,1
+32,My Hero Academia,Kōhei Horikoshi,3,0,34,8,65,1.91,1,1,1
+33,Tokyo Revengers,Ken Wakui,1,0,28,5,65,2.32,1,1,1
+34,Boys Over Flowers,Yoko Kamio,3,2,37,11,61,1.64,0,0,1
+35,Major,Takuya Mitsuda,2,0,101,28,60.5,0.59,1,0,0
+36,The Prince of Tennis,Takeshi Konomi,3,0,42,9,60,1.42,0,0,0
+37,Rokudenashi Blues,Masanori Morita,3,0,42,9,60,1.42,0,0,0
+38,Initial D,Shuichi Shigeno,1,1,48,18,56,1.16,0,0,0
+39,Gin Tama,Hideaki Sorachi,3,0,77,16,55.5,0.72,0,0,0
+40,Bad Boys,Hiroshi Tanaka,0,1,22,8,55,2.5,0,0,0
+41,H2,Mitsuru Adachi,2,0,34,7,55,1.61,0,0,0
+42,Haikyu!!,Haruichi Furudate,3,0,45,8,55,1.22,0,0,0
+43,Ranma �,Rumiko Takahashi,2,0,38,9,55,1.44,0,0,0
+44,Minami no Teio,"Dai Tennōji, Rikiya Gō",0,0,159,30,53,0.33,1,0,0
+45,Berserk,"Kentaro Miura, Kōji Mori, Studio Gaga",0,1,41,33,50,1.25,1,1,1
+46,City Hunter,Tsukasa Hojo,3,0,35,6,50,1.42,0,0,0
+47,Cobra,Buichi Terasawa,3,0,18,6,50,2.77,0,0,0
+48,Devilman,Go Nagai,1,0,5,1,50,10,0,0,0
+49,Fisherman Sanpei,Takao Yaguchi,1,0,65,10,50,0.76,0,0,0
+50,Glass Mask,Suzue Miuchi,0,2,49,36,50,1.02,0,0,0
+51,Great Teacher Onizuka,Tooru Fujisawa,1,0,25,5,50,2,0,0,1
+52,Inuyasha,Rumiko Takahashi,2,0,56,12,50,0.89,0,0,0
+53,Nana,Ai Yazawa,3,2,21,9,50,2.38,0,0,0
+54,Saint Seiya,Masami Kurumada,3,0,28,4,50,1.78,0,0,0
+55,Shoot!,Tsukasa Ōshima,1,0,33,13,50,1.51,0,0,0
+56,YuYu Hakusho,Yoshihiro Togashi,3,0,19,4,50,2.63,0,0,0
+57,Dokaben,Shinji Mizushima,0,0,48,9,48,1,0,0,0
+58,Dragon Quest: The Adventure of Dai,"Riku Sanjo, Koji Inada",3,0,37,7,47,1.27,0,0,0
+59,Kosaku Shima,Kenshi Hirokane,1,1,106,39,47,0.44,1,0,1
+60,Tokyo Ghoul,Sui Ishida,3,1,30,7,47,1.56,0,1,1
+61,Crows,Hiroshi Takahashi,0,0,26,8,46,1.76,0,0,0
+62,Sailor Moon,Naoko Takeuchi,1,2,18,6,46,2.55,0,1,1
+63,Black Jack,Osamu Tezuka,0,0,25,10,45.64,1.83,0,0,1
+64,Dear Boys,Hiroki Yagami,1,0,81,33,45,0.55,1,0,0
+65,Shizukanaru Don  -  Yakuza Side Story,Tatsuo Nitta,0,1,108,25,45,0.41,0,0,0
+66,Shonan Junai Gumi,Tooru Fujisawa,1,0,31,6,45,1.45,0,0,0
+67,Super Radical Gag Family,Kenji Hamaoka,0,0,90,29,44,0.48,1,0,0
+68,The Promised Neverland,"Kaiu Shirai, Posuka Demizu",3,0,20,4,41,2.05,0,1,1
+69,Ace of Diamond,Yuji Terajima,1,0,71,16,40,0.56,1,0,0
+70,Be-Bop High School,Kazuhiro Kiuchi,1,1,48,20,40,0.83,0,0,0
+71,Crest of the Royal Family,Chieko Hosokawa,0,2,66,46,40,0.6,1,0,0
+72,Kyo� Kara Ore Wa!!,Hiroyuki Nishimori,2,0,38,9,40,1.05,0,0,0
+73,Yu-Gi-Oh!,Kazuki Takahashi,3,0,38,8,40,1.05,0,0,1
+74,Nodame Cantabile,Tomoko Ninomiya,1,2,23,8,38.7,1.68,0,0,0
+75,Shaman King,Hiroyuki Takei,0,0,32,6,38,1.08,0,0,0
+76,The Seven Deadly Sins,Nakaba Suzuki,1,0,41,8,37,0.9,0,0,1
+77,20th Century Boys,Naoki Urasawa,2,1,22,7,36,1.63,0,0,0
+78,Cooking Papa,Tochi Ueyama,1,1,158,37,36,0.22,1,0,0
+79,The Chef,"Mai Tsurugina, Tadashi Katou",0,1,62,30,35,0.56,0,0,0
+80,Dr. Slump,Akira Toriyama,3,0,18,4,35,1.94,0,0,0
+81,Itazura na Kiss,Kaoru Tada,3,2,23,9,35,1.52,0,0,0
+82,Urusei Yatsura,Rumiko Takahashi,2,0,34,9,35,1.02,0,0,0
+83,Worst,Hiroshi Takahashi,0,0,33,11,35,1.06,0,0,0
+84,Salary Man Kintaro,Hiroshi Motomiya,3,1,30,8,34,1.13,0,0,0
+85,3×3 Eyes,Yuzo Takada,1,1,40,15,33.33,0.83,0,0,0
+86,Kimi ni Todoke,Karuho Shiina,3,2,30,12,33,1.1,0,0,0
+87,Chibi Maruko-chan,Momoko Sakura,3,2,17,32,32.5,1.91,0,1,0
+88,Black Butler,Yana Toboso,0,0,32,16,32,1,1,0,1
+89,A Certain Magical Index,Kazuma Kamachi,0,0,105,5,31,0.29,1,0,0
+90,Kuroko's Basketball,Tadatoshi Fujimaki,3,0,30,6,31,1.03,0,0,0
+91,Bastard!!,Kazushi Hagiwara,3,0,27,24,30,1.11,0,0,1
+92,Chameleon,Atsushi Kase,1,0,47,9,30,0.63,0,0,1
+93,Death Note,"Tsugumi Ohba, Takeshi Obata",3,0,12,3,30,2.5,0,0,0
+94,Fruits Basket,Natsuki Takaya,0,2,23,8,30,1.3,0,0,0
+95,Gaki Deka,Tatsuhiko Yamagami,0,0,26,6,30,1.15,0,0,0
+96,Jarinko Chie,Etsumi Haruki,0,1,67,19,30,0.44,0,0,0
+97,Jingi [ja],Tachihara Ayumi,0,1,81,31,30,0.37,0,0,0
+98,Kaze Densetsu: Bukkomi no Taku [ja],"Hiroto Saki, Shinya Kuwahara",1,0,27,6,30,1.11,0,0,0
+99,One-Punch Man,"One, Yusuke Murata",3,1,26,10,30,1.15,1,0,1
+100,Reborn!,Akira Amano,3,0,42,8,30,0.71,0,0,0
+101,Shura no Mon,Masatoshi Kawahara,1,0,31,9,30,0.96,0,0,0
+102,That Time I Got Reincarnated as a Slime,"Fuse, Taiki Kawakami",1,0,19,7,30,1.57,1,0,1
+103,Tokimeki Tonight,Koi Ikeno,3,2,30,12,30,1,0,0,0
+104,Ushio and Tora,Kazuhiro Fujita,2,0,33,6,30,0.9,,0,0
+105,Yawara!,Naoki Urasawa,2,1,29,7,30,1.03,0,0,0
+106,Futari Ecchi,Katsu Aki,0,1,84,25,29.5,0.35,1,0,0
+107,Shonan Bakusozoku,Satoshi Yoshida,0,1,16,6,29,1.81,0,0,0
+108,Asari-chan,Mayumi Muroyama,2,2,100,36,28,0.28,0,0,0
+109,Pok�mon Adventures,"Hidenori Kusaka, Mato, Satoshi Yamamoto",2,2,59,25,28,0.47,1,0,1
+110,Space Brothers,Chūya Koyama,1,1,40,15,28,0.7,1,0,0
+111,Yowamushi Pedal,Wataru Watanabe,0,0,80,14,28,0.35,1,0,0
+112,Chihayafuru,Yuki Suetsugu,1,2,50,15,27,0.53,0,0,0
+113,Sakigake!! Otokojuku,Akira Miyashita,3,0,34,6,27,0.79,0,0,0
+114,Spy x Family,Tatsuya Endo,3,0,10,3,27,2.7,1,0,1
+115,Bari Bari Densetsu,Shuichi Shigeno,1,0,38,8,26,0.68,0,0,0
+116,Tsuribaka Nisshi,"Jūzō Yamasaki, Kenichi Kitami",2,1,106,43,26,0.24,1,0,0
+117,Angel Heart,Tsukasa Hojo,0,1,54,16,25,0.46,0,0,0
+118,Ashita no Joe,"Ikki Kajiwara, Tetsuya Chiba",1,0,20,5,25,1.25,0,0,0
+119,Assassination Classroom,Yūsei Matsui,3,0,21,4,25,1.19,0,0,1
+120,Boys Be...,"Masahiro Itabashi, Hiroyuki Tamakoshi",1,0,32,6,25,0.78,0,0,0
+121,D.Gray-man,Katsura Hoshino,3,0,27,18,25,0.92,1,0,0
+122,Emblem Take 2 [ja],"Kazumasa Kiuchi, Jun Watanabe",1,1,62,14,25,0.4,0,0,0
+123,Flame of Recca,Nobuyuki Anzai,2,0,33,7,25,0.75,0,0,0
+124,Hikaru no Go,"Yumi Hotta, Takeshi Obata",3,0,23,5,25,1.08,0,0,0
+125,Jigoku Sensei Nube,"Shō Makura, Takeshi Okano",3,0,70,29,25,0.35,1,0,0
+126,Magi: The Labyrinth of Magic,Shinobu Ohtaka,2,0,37,8,25,0.67,0,0,0
+127,Maison Ikkoku,Rumiko Takahashi,2,1,15,7,25,1.66,0,0,0
+128,Miyuki,Mitsuru Adachi,2,0,12,4,25,2.08,0,0,0
+129,Neon Genesis Evangelion,Yoshiyuki Sadamoto,0,0,14,19,25,1.78,0,0,1
+130,Oh My Goddess!,Kōsuke Fujishima,1,1,48,26,25,0.52,0,0,0
+131,Patalliro!,Mineo Maya,0,2,101,43,25,0.24,1,0,0
+132,Parasyte,Hitoshi Iwaaki,1,1,10,7,25,2.5,0,0,1
+133,The Ping Pong Club,Minoru Furuya,1,1,13,3,25,1.92,0,0,0
+134,Saiyuki,Kazuya Minekura,"
+ 0 ",0,23,25,25,1.08,0,0,0
+135,Seito Shokun!,Yoko Shoji,1,2,79,42,25,0.31,0,0,0
+136,The Silent Service,Kaiji Kawaguchi,1,1,32,8,25,0.78,0,0,0
+137,Toriko,Mitsutoshi Shimabukuro,3,0,43,8,25,0.58,0,0,0
+138,Yukan Club,Yukari Ichijo,3,2,19,20,25,1.31,0,0,0
+139,Ahiru no Sora,Hinata Takeshi,1,0,51,15,24,0.47,0,0,0
+140,Gantz,Hiroya Oku,3,1,37,13,24,0.64,0,0,0
+141,Zatch Bell!,Makoto Raiku,2,0,33,6,23.8,0.72,0,0,0
+142,Rave Master,Hiro Mashima,1,0,35,6,23.5,0.67,0,0,0
+143,Himitsu Series [ja],"Yasuko Uchiyama, Tokuo Yokota, Terumi Fujiki, Yoshitari Iizuka",0,2,116,42,23,0.19,0,0,0
+144,Golden Kamuy,Satoru Noda,3,1,31,8,23,0.74,0,0,0
+145,The Rose of Versailles,Riyoko Ikeda,3,2,10,1,23,2.3,0,0,0
+146,Abu-san,Shinji Mizushima,2,1,107,41,22,0.2,0,0,0
+147,Hoshin Engi,Ryu Fujisaki,3,0,23,4,22,0.95,0,0,0
+148,Terra Formars,"Yū Sasuga, Kenichi Tachibana",3,1,22,7,22,1,0,0,0
+149,Dōbutsu no Oisha-san,Noriko Sasaki,0,2,12,6,21.6,1.8,0,0,0
+150,Kaiji,Nobuyuki Fukumoto,1,1,79,26,21.5,0.28,1,0,0
+151,Rookies,Masanori Morita,3,0,24,5,21,0.87,0,0,0
+152,Tsubasa: Reservoir Chronicle,Clamp,1,0,28,6,21,0.71,0,0,0
+153,Ushijima the Loan Shark,Shohei Manabe,2,1,46,15,21,0.45,0,0,0
+154,Dragon Quest Retsuden: Roto no Monshō,"Chiaki Kawamata, Junji Koyanagi, Kamui Fujiwara",0,0,21,6,20.9,0.99,0,0,0
+155,0 2 Nippon no Rekishi,"Kōta Kodama, Arakawa Shoji",2,2,24,37,20.2,0.84,0,0,0
+156,750 Rider,Isami Ishii,0,0,50,10,20,0.4,0,0,0
+157,Buddha,Osamu Tezuka,0,1,14,11,20,1.42,0,0,0
+158,Cat's Eye,Tsukasa Hojo,3,0,18,3,20,1.11,0,0,0
+159,Chainsaw Man,Tatsuki Fujimoto,3,0,12,4,20,1.66,1,0,1
+160,Cuffs - Kizu Darake no Chizu,Jin Tojo,3,1,32,8,20,0.63,0,0,0
+161,Eyeshield 21,"Riichiro Inagaki, Yusuke Murata",3,0,37,7,20,0.54,0,0,0
+162,Fire Force,Atsushi Ohkubo,1,0,34,7,20,0.58,0,0,1
+163,Food Wars!: Shokugeki no Soma,"Yūto Tsukuda, Shun Saeki",3,0,36,7,20,0.55,0,0,0
+164,Fushigi Yugi,Yuu Watase,2,2,18,5,20,1.11,0,0,0
+165,Haruhi Suzumiya,"Makoto Mizuno, Gaku Tsugano, Puyo, Eretto",0,0,57,14,20,0.35,0,0,0
+166,Hayate the Combat Butler,Kenjiro Hata,2,0,52,13,20,0.38,0,0,0
+167,Kimagure Orange Road,Izumi Matsumoto,3,0,18,3,20,1.11,0,0,0
+168,Tasogare Ryuuseigun,Kenshi Hirokane,2,1,64,27,20,0.31,1,0,0
+169,Love Hina,Ken Akamatsu,1,0,14,3,20,1.42,0,0,0
+170,Master Keaton,"Naoki Urasawa, Hokusei Katsushika, Takashi Nagasaki",2,1,18,6,20,1.11,0,0,0
+171,Monster,Naoki Urasawa,2,1,18,7,20,1.11,0,0,1
+172,Negima! Magister Negi Magi,Ken Akamatsu,1,0,38,9,20,0.52,0,0,0
+173,Peacock King,Makoto Ogino,0,1,55,34,20,0.36,0,0,0
+174,Red River,Chie Shinohara,2,2,28,7,20,0.71,0,0,0
+175,0 Ashibe,Hiromi Morishita,3,1,8,6,20,2.5,0,0,0
+176,Sukeban Deka,Shinji Wada,0,2,22,6,20,0.9,0,0,0
+177,Swan,Kyoko Ariyoshi,3,2,21,5,20,0.95,0,0,0
+178,The Tale of Genji,Waki Yamato,1,2,13,13,20,1.53,0,0,0
+179,The Fable,Katsuhisa Minami,1,1,26,8,20,1.53,1,1,0
+180,Tokyo Daigaku Monogatari,Tatsuya Egawa,2,1,34,9,20,0.58,0,0,0
+181,Weed,Yoshihiro Takahashi,0,1,60,10,20,0.33,0,0,0
