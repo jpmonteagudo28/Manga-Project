@@ -1,17 +1,20 @@
 ## Manga Project
 
 library(rvest)
-url <- "https://www.animenewsnetwork.com/encyclopedia/ratings-manga.php?top50=best_bayesian&n=500"
+url <- "https://www.animenewsnetwork.com/encyclopedia/reports.php?id=173&nlist=all"
 page <-  read_html(url)
 table <- html_table(page)
-df3 <- as.data.frame(table[[1]])
-colnames(df3) <- c("Rank", "Title","Bayes. Estimate", "No. Votes")
 ## Saving the file in .csv format
-write.csv(table, file = "anime-network_rank_top500.csv", row.names = FALSE)
+write.csv(table, file = "anime-network_rank_7081.csv", row.names = FALSE)
+## Instead of using table variable and turning into df, I use .csv file
+## because some titles are misspelled in the original html document. 
+## Had to manually check each name prior to merging both datasets
+df3 <- as.data.frame(read.csv("anime-network_rank_7081.csv", header = TRUE ))
+colnames(df3) <- c("Title","No. Votes","No. Seen","Bayes. Estimate")
 
-## Remove rows = c(1,2,503) which contain no important info
-row_indices <- c(1,2,503)
-df3 <- df3[-row_indices,]
+
+## Remove rows = 1 and cols = 4,5 which contain no important/repeated info
+df3 <- df3[-1,-c(4,5)]
 
 ## Loading 2nd manga list with detailed publication and sales info to merge
 ## both datasets
