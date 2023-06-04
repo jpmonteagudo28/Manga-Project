@@ -1,5 +1,9 @@
 # Manga-Project
-Possible project looking at manga ratings, number of sales, etc. to estimate success of manga. Manga ratings taken from: https://www.animenewsnetwork.com/encyclopedia/ratings-manga.php?top50=best_bayesian&n=500 & https://en.wikipedia.org/wiki/List_of_best-selling_manga
+Possible project looking at manga ratings, number of sales, etc. to estimate success of manga. Manga ratings taken from: https://www.animenewsnetwork.com/encyclopedia/reports.php?id=173&nlist=all & https://en.wikipedia.org/wiki/List_of_best-selling_manga
+
+Note on total number of manga: 
+
+Initially, the list of best-selling manga comprised 181 records, however, when matched with the ANN ratings, only 108 of those records remained as some of the best-selling manga were written and distributed in the 70's, 80's and 90's. 
 
 Note on Bayesian estimate: 
 
