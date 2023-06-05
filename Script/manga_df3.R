@@ -11,13 +11,8 @@ write.csv(table, file = "anime-network_rank_7081.csv", row.names = FALSE)
 ## Had to manually check each name prior to merging both datasets
 df3 <- as.data.frame(read.csv("anime-network_rank_7081.csv", header = TRUE ))
 colnames(df3) <- c("Title","No. Votes","No. Seen","Bayes. Estimate")
-
-
-df3 <- as.data.frame(table)
-colnames(df3) <- c("Title","No. Votes","No. Seen","Bayes. Estimate")
-## Saving the file in .csv format
-write.csv(table, file = "anime-network_rank_7081.csv", row.names = FALSE)
-
+series <- as.data.frame(read.csv("Serielized_best-selling_manga.csv", header = TRUE))
+series$Title <- paste(series$Title, "(manga)", sep = " ") ## to match df3
 ## Remove rows = 1 and cols = 4,5 which contain no important/repeated info
 df3 <- df3[-1,-c(4,5)]
 
@@ -26,3 +21,4 @@ df3 <- df3[-1,-c(4,5)]
 best_manga <-read.csv("List_of_best-selling_manga_1.csv", stringsAsFactors = FALSE)
 best_manga$Title <- paste(best_manga$Title, "(manga)", sep =" ") ## to match df3
 merged_manga <- merge(best_manga, df3, by = "Title")[, -which(names(merge(best_manga, df3, by = "Title")) == "ID")]
+merged_manga <- merge(merged_manga, series, by = "Title")
