@@ -22,3 +22,4 @@ best_manga <-read.csv("List_of_best-selling_manga_1.csv", stringsAsFactors = FAL
 best_manga$Title <- paste(best_manga$Title, "(manga)", sep =" ") ## to match df3
 merged_manga <- merge(best_manga, df3, by = "Title")[, -which(names(merge(best_manga, df3, by = "Title")) == "ID")]
 merged_manga <- merge(merged_manga, series, by = "Title")
+write.csv(merged_manga, file = "Best-selling Manga General List.csv", row.names = FALSE)
