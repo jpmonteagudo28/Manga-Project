@@ -30,7 +30,7 @@ factor_columns <-c("Pub","Demo","Run","Digi","Tele")
 merged_manga[factor_columns] <- lapply(merged_manga[factor_columns],factor)
 ## Mutating columns = 12:14 class from char to numeric. 
 merged_manga[,12:14] <-lapply(merged_manga[,12:14],as.numeric)
-## Rounding Bayesian Estimate to 3 decimal places.
+## Rounding Bayesian Estimate to 2 decimal places.
 merged_manga$`Bayes. Estimate` <- round(merged_manga$`Bayes. Estimate`,digits = 2)
 
 
