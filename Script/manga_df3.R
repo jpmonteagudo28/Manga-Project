@@ -5,7 +5,8 @@ url <- "https://www.animenewsnetwork.com/encyclopedia/reports.php?id=173&nlist=a
 page <-  read_html(url)
 table <- html_table(page)
 ## Saving the file in .csv format
-write.csv(table, file = "anime-network_rank_7081.csv", row.names = FALSE)
+write.csv(table, file = "anime-network_rank_7081.csv", row.names = FALSE) ##STOP!!
+
 ## Instead of using table variable and turning into df, I use .csv file
 ## because some titles are misspelled in the original html document. 
 ## Had to manually check each name prior to merging both datasets
