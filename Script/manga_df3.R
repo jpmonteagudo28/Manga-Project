@@ -23,3 +23,13 @@ best_manga$Title <- paste(best_manga$Title, "(manga)", sep =" ") ## to match df3
 merged_manga <- merge(best_manga, df3, by = "Title")[, -which(names(merge(best_manga, df3, by = "Title")) == "ID")]
 merged_manga <- merge(merged_manga, series, by = "Title")
 write.csv(merged_manga, file = "Best-selling Manga General List.csv", row.names = FALSE)
+
+## Converting columns = 3,4,9,10,11 to factors (0,1)
+factor_columns <-c("Pub","Demo","Run","Digi","Tele")
+merged_manga[factor_columns] <- lapply(merged_manga[factor_columns],factor)
+## Mutating columns = 12:14 class from char to numeric. 
+merged_manga[,12:14] <-lapply(merged_manga[,12:14],as.numeric)
+## Rounding Bayesian Estimate to 3 decimal places.
+merged_manga$`Bayes. Estimate` <- round(merged_manga$`Bayes. Estimate`,digits = 2)
+
+
