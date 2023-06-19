@@ -10,7 +10,9 @@ plotsummary <- xpathSApply(rootnode, "//info[@type='Plot Summary']", xmlValue)
 genres <- as.list(xpathSApply(rootnode, "//info[@type='Genres']", xmlValue))
 themes <- as.list(xpathSApply(rootnode, "//info[@type='Themes']", xmlValue))
 themes <- paste(themes[2], themes[1], "with", themes[3], sep = " ")
-## For 2nd manga title
+## For two manga titles at once.
+## Second manga title does not contain theme information
+##According to ANN, can only request 50 titles/request (total 120 titles)
 apimanga2 <-"https://cdn.animenewsnetwork.com/encyclopedia/api.xml?manga=1223/20224"
 apimangaData2 <- getURL(apimanga2)
 mangadoc2 <- xmlParse(apimangaData2)
