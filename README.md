@@ -1,4 +1,4 @@
-# Manga-Project
+# Manga-Project :books:
 
 Possible project looking at manga ratings, number of sales, etc. to estimate success of manga. Manga ratings taken from: https://www.animenewsnetwork.com/encyclopedia/reports.php?id=173&nlist=all & https://en.wikipedia.org/wiki/List_of_best-selling_manga
 
