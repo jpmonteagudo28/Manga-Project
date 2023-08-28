@@ -1,20 +1,31 @@
-#------------------------------------------------------------------------------#
-# Loading data and conducting EDA                                              #
-#------------------------------------------------------------------------------#
+#---------------------------------------#
+# Loading data and conducting EDA       #
+#---------------------------------------#
 
 summ_manga_data <- read.csv("Manga Summary Data.csv", header = T)
-summ_manga_data$Pub <- as.factor(summ_manga_data$Pub)
-summ_manga_data$Demo <- as.factor(summ_manga_data$Demo)
-summ_manga_data$Run <- as.factor(summ_manga_data$Run)
-summ_manga_data$Digi <- as.factor(summ_manga_data$Digi)
-summ_manga_data$Tele <- as.factor(summ_manga_data$Tele)
-#------------------------------------#
-# Getting general feel for the data  #
-#------------------------------------#
+summ_manga_data$Pub <- factor(summ_manga_data$Pub, levels = c(0,1,2,3),labels = c("Others","Kodansha","Shogakukan","Shueisha"))
+summ_manga_data$Demo <- factor(summ_manga_data$Demo, levels = c(0,1,2), labels = c("Shonen","Seinen","Others"))
+summ_manga_data$Run <- factor(summ_manga_data$Run, levels = c(0,1), labels = c("No","Yes"))
+summ_manga_data$Digi <- factor(summ_manga_data$Digi, levels = c(0,1), labels = c("No","Yes"))
+summ_manga_data$Tele <- factor(summ_manga_data$Tele, levels = c(0,1), labels = c("Not televised", "Televised"))
+summ_manga_data$Release <-as.numeric(substr(summ_manga_data$Serielized,1,4))
+summ_manga_data[94,15] <- "1990-present"
+summ_manga_data$Concluded <- as.numeric(substr(summ_manga_data$Serielized,6,9)) #NA indicates manga's still running
+summ_manga_data$Title <- gsub("\\s*\\(manga\\)$", "", summ_manga_data$Title)
+write.csv(summ_manga_data,"Manga Summary Data.csv",row.names = FALSE)
+
+#--------------------------------------#
+# Getting general feel for the data    #
+#--------------------------------------#
 
 str(summ_manga_data)
 summary(summ_manga_data)
 # Finding percent missing values in each column
+
+#--------------------------------------#
+# What manga titles have missing info? #
+#--------------------------------------#
+
 percent_missing <- sapply(summ_manga_data, function(col) {
   num_missing <- sum(is.na(col))
   total <- length(col)
@@ -22,16 +33,12 @@ percent_missing <- sapply(summ_manga_data, function(col) {
   return(round(percent, 2))
 })
 barplot(percent_missing,
-  ylim = c(0, 20), xlab = "Columns", ylab = "Percentage",
-  main = "Percentage of missing values by column",
-  col = c("royalblue", "forestgreen", "brown2")
+        ylim = c(0, 20), xlab = "Columns", ylab = "Percentage",
+        main = "Percentage of missing values by column",
+        col = c("royalblue", "forestgreen", "brown2")
 )
 text(x = c(18, 20), y = percent_missing[16] + .5, labels = "16.67", pos = 4, cex = .8)
 text(x = (19), y = percent_missing[17] + .5, labels = "14.17", pos = 4, cex = .8)
-
-#--------------------------------------#
-# What manga titles have missing info? #
-#--------------------------------------#
 
 na_manga <- which(is.na(summ_manga_data[16:18]))
 na_info <- summ_manga_data[na_manga[1:20], c(1, 6, 7, 13:15)]
@@ -50,7 +57,7 @@ max(summ_manga_data$Bayes..Estimate)
 max(na_info$Bayes..Estimate)
 # [1] 9.240951
 # [1] 8.523531
-mean(summ_manga_data$Bayes..Estimate[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)], na.rm = T)
+mean(summ_manga_data$Bayes..Estimate[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)])
 mean(na_info$Bayes..Estimate)
 # [1] 7.598026
 # [1] 4.698811
@@ -66,11 +73,14 @@ mean(na_info$Sold)
 # Looking at release year of manga and missing info
 release_date <- as.numeric(substr(summ_manga_data$Serielized[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)], 1, 4))
 na_release_date <- as.numeric(substr(na_info$Serielized, 1, 4))
+
 plot(na_release_date, na_info$Sold, pch = 17, col = "forestgreen", xlab = "Release year", ylab = "No. copies sold")
 plot(release_date, summ_manga_data$Sold[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)], pch = 17, col = "brown2", xlab = "Release year", ylab = "No. copies sold")
+
 boxplot(na_release_date, na_info$Sold, pch = 17, col = "forestgreen", xlab = "Release year", ylab = "No. copies sold", ylim = c(0, 1000))
 boxplot(release_date, summ_manga_data$Sold[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)], pch = 17, col = "brown2", xlab = "Release year", ylab = "No. copies sold", ylim = c(0, 1000))
 abline(h = median(summ_manga_data$Sold[-c(8, 20, 21, 23, 24, 26, 34, 91, 94, 96, 98, 99, 117, 119)]), col = "navy", lty = 8)
+
 quantile(na_release_date)
 quantile(release_date)
 
@@ -84,6 +94,7 @@ plot <- ggplot() + ## Histogram of No. times seen
   scale_fill_manual(values = c("royalblue", "brown2"), labels = c("Manga Summary Data", "MIssing data")) +
   theme_minimal()
 plot
+
 par(mfrow = c(1, 2))
 boxplot(y, pch = 2, col = "royalblue", ylim = c(0, 2000), xlab = "No. times Seen-no NA")
 boxplot(na_info$No..Seen, pch = 2, col = "forestgreen", ylim = c(0, 2000), xlab = "No. times Seen-NA")
@@ -124,10 +135,26 @@ table <- as.data.frame.matrix(addmargins(table(factor_sold, summ_manga_data$Pub)
 colnames(table) <- c("Others","Kodansha","Shogakukan","Shueisha", "Total")
 round(prop.table(table),2)
 
-fill_col <- c("0" = "royalblue", "1" = "darkseagreen", "2" = "forestgreen", "3" = "brown2")
+fill_col <- c("Others" = "royalblue", "Kodansha" = "darkseagreen", "Shogakukan" = "forestgreen", "Shueisha" = "brown2")
 ggplot(summ_manga_data, aes(x = Demo, y = Sold, fill = Pub)) +
   geom_boxplot() +
   facet_wrap(~ Pub) +
   scale_fill_manual(values = fill_col) +
   labs(x = "Demo", y = "Sold", title = "No. copies sold to selected demographic by Publishing Company") +
   theme_minimal()
+
+
+ggplot(summ_manga_data, aes(x = Release,y = Sold, fill = Pub))+
+  geom_col(width = 1.5)+
+  facet_wrap(~Pub)+
+  scale_fill_manual(values = fill_col)+
+  labs(x = "Release Year", y = "No. copies Sold (in millions)", title = "No. of copies sold by year by publishing company")+
+  theme_minimal()
+
+demo_col <- c("Shonen" = "orangered", "Seinen" = "forestgreen", "Others" = "hotpink3")
+ggplot(summ_manga_data, aes(x = Release,y = Sold, fill = Demo))+
+geom_col(width = 1.2)+
+facet_wrap(~Demo)+
+scale_fill_manual(values = demo_col)+
+labs(x = "Release Year", y = "No. copies Sold (in millions)", title = "No. of copies sold by year by demographic")+
+theme_minimal()

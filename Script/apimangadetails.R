@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------#
 
 library(RCurl)
-library(XML2)
+library(XML)
 library(dplyr)
 library(lubridate)
 apimanga <- "https://cdn.animenewsnetwork.com/encyclopedia/api.xml?manga=8991"
@@ -36,7 +36,7 @@ genre <- xpathSApply(kimetsu_node[[1]], "./info[@type='Genres']", xmlValue)
 manga_df <- list()
 
 baseapi <- "https://cdn.animenewsnetwork.com/encyclopedia/api.xml?"
-id <- c( # Saved as api_id.txt doc in Data foldercanv
+id <- c( # Saved as api_id.txt doc in Data folder
   8991, 3424, 9577, 3345, 15018, 1343, 12308, 11159, 1214, 2298, 10154, 1341, 2468,
   2411, 3569, 4053, 2898, 22369, 19684, 4242, 11106, 1593, 9857, 29303, 7987, 5146,
   1967, 4354, 20224, 2454, 1335, 970, 297, 3244, 15722, 2869, 6872, 18530, 1547, 2701,
@@ -103,16 +103,16 @@ for (i in manga_url) { # Iterate through each manga id and retrieve info
 manga_DF <- bind_rows(manga_df)
 
 # Filling in empty Genres and Themes rows
-manga_genre <- c("drama", "action", "romance", "science fiction", "tragedy", "comedy", "horror")
+manga_genre <- c("drama", "action", "romance", "science fiction", "tragedy", 
+                 "comedy", "horror","psychological","supernatural","mystery",
+                 "adventure","slice of life","fantasy")
+
 wrong_cols <- manga_DF[, 6:35]
 missing <- manga_DF[which(is.na(manga_DF$Genre) | is.na(manga_DF$Themes)), ]
 
 # Create a logical matrix of missing genres and themes
 missing_genres <- is.na(missing$Genre)
 missing_themes <- is.na(missing$Themes)
-
-# Define the list of valid manga genres
-manga_genre <- c("drama", "action", "romance", "science fiction", "tragedy", "comedy", "horror")
 
 # Find the indices of rows with matching genres in the X. columns
 matching_indices <- apply(missing[, 6:35], 1, function(row) any(row %in% manga_genre))
@@ -158,5 +158,4 @@ merged_manga[24,1] <- paste("Shin",merged_manga[24,1], sep = " ")
 
 # Merging 2 datasets to create summary manga dataset
 summ_manga_data <- merge(merged_manga, manga_DF, by = "Title")
-summ_manga_data$Serielized <- gsub("present","2022",summ_manga_data$Serielized)
 write.csv(summ_manga_data,"Manga Summary Data.csv",row.names = FALSE)
